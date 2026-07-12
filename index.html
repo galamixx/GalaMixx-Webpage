@@ -762,33 +762,37 @@ MOBILE header nav css
 @media(max-width:900px){
 
     header{
-    flex-direction:column;
-    align-items:center;
-    height:auto;
-    overflow:visible;
-}
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        height:auto;
+        min-height:0;
+        overflow:visible;
+    }
 
     .logo{
         display:flex;
         justify-content:center;
         align-items:center;
+        width:100%;
+        height:auto;
     }
 
     .logo img{
-    height:70px;
-    width:auto;
-    object-fit:contain;
-}
-
-    nav{
-        flex-wrap:wrap;
-        justify-content:center;
-        margin-top:15px;
+        display:block;
+        height:70px;
+        width:auto;
+        max-width:100%;
+        object-fit:contain;
     }
 
-    .call-header{
-        margin-top:20px;
-        margin-left:0;
+    nav{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items:center;
+        width:100%;
+        margin-top:15px;
     }
 
 }
