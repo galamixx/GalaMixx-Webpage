@@ -1,16 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
+<link rel="stylesheet" href="css/style.css">
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> GalaMixx Appliance Reapair </title>
+
+<title>GalaMixx Appliance Repair </title>
+
+<meta name="description"
+content="Fast, reliable appliance repair for refrigerators, washers, dryers, dishwashers, ovens, and more. Proudly serving Bergen, Passaic, and Essex Counties. Open 7 days a week. Call GalaMixx Appliance Repair at (551) 223-5227.">
+
+<link rel="icon" type="image/png" href="images/logo.png">
+<meta name="robots" content="index, follow">
+<meta name="author" content="GalaMixx Appliance Repair">
+
+<meta name="author" content="GalaMixx Appliance Repair">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "GalaMixx Appliance Repair",
+  "telephone": "(551) 223-5227",
+  "email": "galamixxappliance@gmail.com",
+  "description": "Fast, reliable appliance repair for refrigerators, washers, dryers, dishwashers, ovens, and more.",
+  "areaServed": [
+    "Bergen County, NJ",
+    "Passaic County, NJ",
+    "Essex County, NJ"
+  ],
+  "openingHours": "Mo-Su 09:00-22:00"
+}
+</script>
+
+</head>
+</head>
 
 <style>
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial,Helvetica,sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 html{
@@ -18,213 +54,814 @@ html{
 }
 
 body{
-    background:#f5f7f5;
+    background:#f7f7f7;
     color:#333;
+    line-height:1.6;
 }
 
-/* Header */
+img{
+    max-width:100%;
+}
+/* HERO */
+
+.hero{
+
+    background:white;
+
+    padding:60px 0;
+
+}
+
+.hero-banner{
+
+    width:90%;
+
+    max-width:1200px;
+
+    height:420px;
+
+    margin:auto;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    background:
+
+    linear-gradient(rgba(0,0,0,.55),
+    rgba(0,0,0,.55)),
+
+   url("images/hero.jpg")
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.18);
+
+}
+
+.hero-content{
+
+    text-align:center;
+
+    color:white;
+
+    padding:20px;
+
+}
+
+.hero h1{
+
+    font-size:58px;
+
+    margin-bottom:10px;
+
+}
+
+.hero h2{
+
+    font-size:42px;
+
+    color:#F57C00;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    font-size:22px;
+
+    margin-bottom:35px;
+
+}
+/* ===========================
+WHY CHOOSE US
+=========================== */
+
+.why{
+
+    background:#f8f9fa;
+
+}
+
+.why-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+    margin-top:50px;
+
+}
+
+.why-card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:12px;
+
+    text-align:center;
+
+    transition:.3s;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.why-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.15);
+
+}
+
+.why-icon{
+
+    width:80px;
+
+    height:80px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#F57C00;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:40px;
+
+    margin-bottom:25px;
+
+}
+
+.why-card h3{
+
+    color:#1B5E20;
+
+    margin-bottom:15px;
+
+    font-size:24px;
+
+}
+
+.why-card p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+/* ===========================
+CONTACT
+=========================== */
+
+.contact{
+
+    background:white;
+
+}
+
+.contact-container{
+
+    display:grid;
+
+    grid-template-columns:1fr 1.3fr;
+
+    gap:50px;
+
+    margin-top:50px;
+
+}
+
+.contact-info{
+
+    background:#1B5E20;
+
+    color:white;
+
+    padding:40px;
+
+    border-radius:12px;
+
+}
+
+.contact-info h3{
+
+    margin-bottom:30px;
+
+    font-size:30px;
+
+}
+
+.info-box{
+
+    margin-bottom:25px;
+
+    line-height:1.8;
+
+}
+
+.info-box a{
+
+    color:white;
+
+    text-decoration:none;
+
+}
+
+.contact-form{
+
+    background:#f8f8f8;
+
+    padding:40px;
+
+    border-radius:12px;
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    width:100%;
+
+    padding:16px;
+
+    margin-bottom:18px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    font-size:17px;
+
+}
+
+.contact-form button{
+
+    width:100%;
+
+    background:#F57C00;
+
+    color:white;
+
+    border:none;
+
+    padding:18px;
+
+    border-radius:8px;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.contact-form button:hover{
+
+    background:#1B5E20;
+
+}
+
+/* ===========================
+FOOTER
+=========================== */
+
+footer{
+
+    background:#123b15;
+
+    color:white;
+
+    text-align:center;
+
+    padding:50px 20px;
+
+}
+
+footer img{
+
+    width:90px;
+
+    margin-bottom:20px;
+
+}
+
+footer h3{
+
+    font-size:30px;
+
+    margin-bottom:15px;
+
+}
+
+footer p{
+
+    margin:8px 0;
+
+}
+
+.copyright{
+
+    margin-top:30px;
+
+    color:#ccc;
+
+}
+
+
+/* ===========================
+SERVICES
+=========================== */
+
+.services{
+
+    background:white;
+
+}
+
+.subtitle{
+
+    text-align:center;
+
+    color:#666;
+
+    margin-bottom:50px;
+
+    font-size:20px;
+
+}
+
+.service-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+.service-card{
+
+    background:#fff;
+
+    padding:35px;
+
+    border-radius:12px;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+    border-top:5px solid #F57C00;
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+
+}
+
+.icon{
+
+    font-size:55px;
+
+    margin-bottom:20px;
+
+}
+
+.service-card h3{
+
+    color:#1B5E20;
+
+    margin-bottom:15px;
+
+}
+
+.service-card p{
+
+    color:#666;
+
+    font-size:17px;
+
+}
+
+/* ===========================
+HEADER
+=========================== */
 
 header{
+
     position:sticky;
     top:0;
-    background:#1b5e20;
+
+    background:#1B5E20;
+
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:15px 8%;
-    box-shadow:0 3px 10px rgba(0,0,0,.2);
-    z-index:999;
+
+    padding:18px 8%;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.18);
+
+    z-index:9999;
+
+}
+
+    .logo{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    gap:15px;
+}
+
+   .logo img{
+    height:55px;
+    width:auto;
 }
 
 
-/*logo gala*/
-.logo img{
-    height:70px;
-}
 
-/*galamixxletter*/
-
-.logo h2{
-	font-size:50px;
+.logo h1{
     color:white;
+    font-size:10px;
 }
-/*words service etc*/
+
+
 .logo span{
-    color:#ff9800;
+
+    color:#F57C00;
+
 }
-/*color letter service*/
+
+/* ===========================
+NAVIGATION
+=========================== */
+
+nav{
+
+    display:flex;
+    align-items:center;
+    gap:28px;
+
+}
+
 nav a{
+
     color:white;
     text-decoration:none;
-    margin-left:20px;
+    font-size:17px;
     font-weight:bold;
+    transition:.3s;
+
 }
 
 nav a:hover{
-    color:#ff9800;
+
+    color:#FFB74D;
+
 }
 
-/* Hero background pic and letters fast & */
-.hero{
-    height:100vh;
-  background:
-linear-gradient(rgba(0,70,120,.55), rgba(27,94,32,.65)),
-url("https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=1800&q=80");
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    display:flex;
-    justify-content:center;
-    align-items:top;
-    text-align:center;
-}
+/* ===========================
+HEADER CALL BUTTON
+=========================== */
 
-.overlay{
-    background:rgba(255,255,255,0.08);
-    backdrop-filter:blur(3px);
-    padding:40px;
-    border-radius:15px;
-}
+.call-header{
 
-.hero h1{
-    color:#fff;
-    font-size:60px;
-    margin-bottom:20px;
-    text-shadow:2px 2px 8px rgba(0,0,0,.5);
-}
-
-.hero p{
-    color:#fff;
-    font-size:22px;
-    margin-bottom:30px;
-}
-
-.btn{
     background:#F57C00;
-    color:#fff;
-    padding:15px 35px;
-    border-radius:8px;
+
+    color:white;
+
     text-decoration:none;
+
+    padding:14px 26px;
+
+    border-radius:8px;
+
+    font-size:18px;
+
     font-weight:bold;
+
     transition:.3s;
+
+    margin-left:25px;
+
 }
 
-.btn:hover{
-    background:#1565C0;
+.call-header:hover{
+
+    background:#E65100;
+
 }
-/* Sections */
+
+/* ===========================
+COMMON SECTION STYLE
+=========================== */
 
 section{
-    padding:70px 8%;
+
+    padding:80px 8%;
+
 }
 
+h2{
 
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-}
+    color:#1B5E20;
 
-.card{
-    background:white;
-    border-radius:10px;
-    padding:30px;
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
-    transition:.3s;
-}
+    font-size:42px;
 
-.card:hover{
-    transform:translateY(-8px);
-}
-
-.card h3{
-    color:#1b5e20;
-    margin-bottom:10px;
-}
-
-.why{
-    background:#e8f5e9;
-}
-
-ul{
-    max-width:700px;
-    margin:auto;
-    line-height:2;
-    font-size:18px;
-}
-
-.review{
-    background:white;
-    border-left:5px solid #ff9800;
-    padding:20px;
-    border-radius:8px;
     margin-bottom:20px;
-    box-shadow:0 3px 10px rgba(0,0,0,.08);
-}
 
-.contact{
-    background:#1b5e20;
-    color:white;
     text-align:center;
+
 }
 
-.contact a{
-    color:#ff9800;
+p{
+
+    font-size:18px;
+
+}
+/* ===========================
+REVIEWS
+=========================== */
+
+.reviews{
+
+    background:white;
+
+    text-align:center;
+
+}
+
+.review-box{
+
+    max-width:650px;
+
+    margin:40px auto;
+
+    background:#f8f8f8;
+
+    padding:45px;
+
+    border-radius:12px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.stars{
+
+    color:#F4B400;
+
+    font-size:40px;
+
+    letter-spacing:4px;
+
+    margin-bottom:15px;
+
+}
+
+.review-box h3{
+
+    color:#1B5E20;
+
+    margin-bottom:20px;
+
+}
+
+.review-button{
+
+    display:inline-block;
+
+    margin-top:30px;
+
+    background:#F57C00;
+
+    color:white;
+
     text-decoration:none;
+
+    padding:16px 35px;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
 }
 
-form{
-    max-width:500px;
-    margin:30px auto;
+.review-button:hover{
+
+    background:#1B5E20;
+
 }
 
-input,
-textarea{
-    width:100%;
-    padding:12px;
-    margin:10px 0;
-    border:none;
-    border-radius:5px;
-}
+/* ===========================
+SERVICE AREA
+=========================== */
 
-button{
-    background:#ff9800;
-    color:white;
-    border:none;
-    padding:14px 25px;
-    border-radius:5px;
-    cursor:pointer;
-    font-size:16px;
-}
+.areas{
 
-button:hover{
-    background:#ef6c00;
-}
+    background:#f4f7f5;
 
-footer{
-    background:#0f3d14;
-    color:white;
     text-align:center;
-    padding:25px;
+
 }
 
-@media(max-width:768px){
+.city-grid{
+
+    margin-top:45px;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:18px;
+
+}
+
+.city-grid div{
+
+    background:white;
+
+    padding:18px;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+    color:#1B5E20;
+
+    box-shadow:0 5px 12px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.city-grid div:hover{
+
+    background:#F57C00;
+
+    color:white;
+
+    transform:translateY(-5px);
+
+}
+
+.zip-note{
+
+    margin-top:40px;
+
+    font-size:20px;
+
+    color:#555;
+
+    font-weight:bold;
+
+}
+
+
+
+
+/* ===========================
+MOBILE header nav css
+=========================== */
+
+@media(max-width:900px){
 
 header{
-flex-direction:column;
+
+    flex-direction:column;
+
+}
+
+.logo{
+
+    flex-direction:column;
+
 }
 
 nav{
-margin-top:15px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    margin-top:15px;
+
 }
 
-.hero h1{
-font-size:36px;
+.call-header{
+
+    margin-top:20px;
+
+    margin-left:0;
+
 }
 
-.hero p{
-font-size:18px;
+.logo h1{
+
+    font-size:30px;
+
 }
+  }
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.hero-call,
+.hero-service{
+    padding:15px 30px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:18px;
+}
+
+.hero-call{
+    background:#F57C00;
+    color:white;
+}
+
+.hero-service{
+    background:white;
+    color:#1B5E20;
+}
+/* ===========================
+MOBILE
+=========================== */
+
+@media(max-width:900px){
+
+.contact-container{
+
+    grid-template-columns:1fr;
+
+}
+.hero-phone{
+    margin-top:25px;
+    font-size:22px;
+    font-weight:bold;
+    color:white;
+}
+/* Phone hero adjustments for cell */
+}
+@media(max-width:600px){
+
+    .hero-banner{
+        height:500px;
+        width:95%;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .hero h2{
+        font-size:25px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+    }
 
 }
 </style>
@@ -237,247 +874,391 @@ font-size:18px;
 
 <div class="logo">
 
+    <img src="images/logo.png" alt="GalaMixx Logo">
 
-<h2>Gala<span>Mixx</span>  </h2>
+    
 
 </div>
 
 <nav>
+
 <a href="#services">Services</a>
-<a href="#areas">Service Area</a>
+
 <a href="#reviews">Reviews</a>
+
+<a href="#areas">Service Area</a>
+
 <a href="#contact">Contact</a>
+
+<a href="tel:5512235227" class="call-header">
+📞 Call (551) 223-5227
+</a>
+
 </nav>
 
 </header>
+<!-- ===========================
+HERO SECTION
+=========================== -->
+
+<!-- HERO -->
 
 <section class="hero">
 
-<div class="hero-content">
+    <div class="hero-banner">
 
-<h1>FAST & RELIABLE APPLIANCE REPAIR</h1>
+        <div class="hero-content">
 
+            <h1>Same-Day Service Available</h1>
 
-<p>Open 7 Days a Week • 8:00 AM – 10:00 PM </p>
+            <h2>Professional Appliance Repair</h2>
 
-
-<a class="button" href="tel:5512235227">Call 📞(551) 223-5227</a>
-
-</div>
-
-</section></section>
-
-<section id="services">
-
-<h2>Our Services</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>🧊 Refrigerator Repair</h3>
-<p>Cooling problems, compressors, leaks and ice makers.</p>
-</div>
-
-<div class="card">
-<h3>🧺 Washer Repair</h3>
-<p>Drainage, spin cycle, noise and vibration repairs.</p>
-</div>
-
-<div class="card">
-<h3>🌬 Dryer Repair</h3>
-<p>No heat, drum problems, sensors and electrical repairs.</p>
-</div>
-
-<div class="card">
-<h3>🍽 Dishwasher Repair</h3>
-<p>Leaks, drainage, pump and cleaning performance issues.</p>
-</div>
-
-<div class="card">
-<h3>🔥 Oven & Stove Repair</h3>
-<p>Gas and electric ovens, cooktops and ranges.</p>
-</div>
-
-<div class="card">
-<h3>📺 Microwave Repair</h3>
-<p>Heating issues, door switches and electronic controls.</p>
-</div>
-
-</div>
-
-<section class="why">
-
-<h2>Why Choose GalaMixx?</h2>
-
-<p class="subtitle">
-Professional appliance repair you can trust throughout North Jersey.
-</p>
-
-<div class="why-grid">
-
-<div class="why-card">
-<div class="icon">⚡</div>
-<h3>Same-Day Service</h3>
-<p>Fast response times to get your appliances working again.</p>
-</div>
-
-<div class="why-card">
-<div class="icon">🕒</div>
-<h3>Open 7 Days</h3>
-<p>Available every day from 8:00 AM to 10:00 PM.</p>
-</div>
-
-<div class="why-card">
-<div class="icon">💲</div>
-<h3>Upfront Pricing</h3>
-<p>No hidden fees. Honest estimates before any repair begins.</p>
-</div>
-
-<div class="why-card">
-<div class="icon">🛠️</div>
-<h3>Experienced Technicians</h3>
-<p>Skilled professionals with experience repairing all major brands.</p>
-</div>
-
-<div class="why-card">
-<div class="icon">🛡️</div>
-<h3>Warranty Included</h3>
-<p>We stand behind our work with warranty on repairs.</p>
-</div>
-
-<div class="why-card">
-<div class="icon">⭐</div>
-<h3>Major Brands</h3>
-<p>LG, Samsung, Whirlpool, GE, Bosch, Frigidaire and many more.</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="reviews">
-
-<h2>Google Reviews</h2>
-
-<div class="review">
-⭐⭐⭐⭐⭐<br><br>
-We value every customer. Visit our Google Business Profile to read our latest reviews and leave your feedback after your service appointment.
-</div>
-
-<p style="text-align:center;">
-<a class="button" href="#" target="_blank">Read Our Google Reviews</a>
-</p>
-
-</section>
-
-<section id="areas">
-
-<h2>Service Area</h2>
-
-<section id="service-area">
-
-    <div class="container">
-
-        <h2>Our Service Area</h2>
-
-      
-        </p>
-
-        <div class="service-grid">
-
-            <div class="service-grid">
-                <h3>Passaic County</h3>
-
-                <ul>
-                   <li>✔ Clifton •Passaic •Paterson •Woodland Park •Totowa •Little Falls •Wayne </li>                    
-                </ul>
-
-            </div>
-
-            <div class="service-grid">
-                <h3>Bergen County</h3>
-				 <ul>
-	<li>✔ Hackensack •Paramus •Fair Lawn •Lodi  •Saddle Brook •Teaneck •Fort Lee •Ridgewood  •Garfield </li>
-
-				 </ul>  
-            </div>
-
-            <div class="service-grid">
-
-                <h3>Essex County</h3>
-
-                <ul>
-                    <li>✔ Bloomfield  •Nutley •Belleville •Montclair  •Verona •West Orange </li>
-				</ul>
-            </div>
-
-        </div>
-
-        <div class="service-grid">
-
-            <h3>Additional Areas We Serve</h3>
- <ul>
             <p>
-                East Rutherford • Rutherford • Lyndhurst • North Arlington •
-                Wallington • Carlstadt • Wood-Ridge • Hasbrouck Heights •
-                Elmwood Park • Bogota • Dumont • Bergenfield • Ridgefield Park •
-                Little Ferry • Moonachie • Edgewater • Palisades Park •
-                New Milford • Glen Rock • Midland Park and surrounding communities.
+                Expert appliance repair for 
+                refrigerators, washers, dryers, dishwashers, ovens, and more<br>
+                Open 7 Days • 9:00 AM – 10:00 PM
             </p>
- </ul>
+
+            <div class="hero-buttons">
+
+                <a href="tel:5512235227" class="hero-call">
+                    📞 Call Now
+                </a>
+
+                <a href="#contact" class="hero-service">
+                    Schedule Service
+                </a>
+
+            </div>
+
         </div>
 
     </div>
 
-</section></p>
+</section>
+  
+
+    </div>
+<!-- ===========================
+SERVICES
+=========================== -->
+
+<section id="services" class="services">
+
+    <h2>Our Appliance Repair Services</h2>
+
+    <p class="subtitle">
+        We repair all major household appliances quickly and professionally.
+    </p>
+
+    <div class="service-grid">
+
+        <div class="service-card">
+            <div class="icon">🧊</div>
+            <h3>Refrigerator Repair</h3>
+            <p>Cooling problems, leaks, ice makers, compressors and more.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="icon">🧺</div>
+            <h3>Washer Repair</h3>
+            <p>Won't spin, won't drain, leaks, noisy operation and error codes.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="icon">🔥</div>
+            <h3>Dryer Repair</h3>
+            <p>Not heating, takes too long to dry, strange noises or won't start.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="icon">🍽️</div>
+            <h3>Dishwasher Repair</h3>
+            <p>Not cleaning, leaking, won't drain or won't turn on.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="icon">🍕</div>
+            <h3>Oven & Range Repair</h3>
+            <p>Gas and electric ovens, cooktops and ranges repaired.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="icon">⚡</div>
+            <h3>Microwave Repair</h3>
+            <p>Heating issues, turntable problems and electrical faults.</p>
+        </div>
+
+    </div>
 
 </section>
+<!-- ===========================
+WHY CHOOSE GALAMIXX
+=========================== -->
+
+<section id="why" class="why">
+
+    <h2>Why Choose GalaMixx Appliance Repair?</h2>
+
+    <p class="subtitle">
+        Honest Service • Quality Repairs • Customer Satisfaction
+    </p>
+
+    <div class="why-grid">
+
+        <div class="why-card">
+            <div class="why-icon">⚡</div>
+            <h3>Same-Day Service</h3>
+            <p>
+                Fast response times to get your appliances back up and running as quickly as possible.
+            </p>
+        </div>
+
+        <div class="why-card">
+            <div class="why-icon">📅</div>
+            <h3>Open 7 Days a Week</h3>
+            <p>
+                Convenient scheduling every day from 9:00 AM to 10:00 PM.
+            </p>
+        </div>
+
+        <div class="why-card">
+            <div class="why-icon">💲</div>
+            <h3>Honest Upfront Pricing</h3>
+            <p>
+                No hidden fees. You'll always know the cost before repairs begin.
+            </p>
+        </div>
+
+        <div class="why-card">
+            <div class="why-icon">🛠️</div>
+            <h3>Experienced Technicians</h3>
+            <p>
+                Skilled appliance repair with years of hands-on experience.
+            </p>
+        </div>
+
+        <div class="why-card">
+            <div class="why-icon">✔</div>
+            <h3>Warranty on Repairs</h3>
+            <p>
+                We stand behind our work for your peace of mind.
+            </p>
+        </div>
+
+        <div class="why-card">
+            <div class="why-icon">🏠</div>
+            <h3>All Major Brands</h3>
+            <p>
+                Whirlpool, GE, LG, Samsung, Bosch, Frigidaire, KitchenAid and more.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+<!-- ===========================
+GOOGLE REVIEWS
+=========================== -->
+
+<section id="reviews" class="reviews">
+
+    <h2>Customer Reviews</h2>
+
+    <p class="subtitle">
+        We appreciate every customer who trusts GalaMixx Appliance Repair.
+    </p>
+
+    <div class="review-box">
+        
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+             alt="Google"
+             class="google-icon">
+        <div class="stars">★★★★★</div>
+
+        <h3>Based on Customer Reviews</h3>
+
+        <p>
+            Your feedback helps us continue providing fast, honest, and reliable appliance repair throughout North Jersey.
+        </p>
+
+        <a href="//g.page/r/CZWVw-iExxM8EAE/review"
+           target="_blank"
+           class="review-button">
+            ⭐ Leave a Google Review
+        </a>
+      </div>
+
+</section>
+
+<!-- ===========================
+SERVICE AREA
+=========================== -->
+
+<section id="areas" class="areas">
+
+    <h2>Proudly Serving North Jersey</h2>
+
+    <p class="subtitle">
+        Fast Appliance Repair Across Bergen, Passaic & Essex Counties
+    </p>
+
+    <div class="city-grid">
+
+        <div>✔ Clifton</div>
+        <div>✔ Passaic</div>
+        <div>✔ Paterson</div>
+        <div>✔ Woodland Park</div>
+        <div>✔ Totowa</div>
+        <div>✔ Little Falls</div>
+        <div>✔ Wayne</div>
+        <div>✔ Nutley</div>
+        <div>✔ Bloomfield</div>
+        <div>✔ Belleville</div>
+        <div>✔ Hackensack</div>
+        <div>✔ Fair Lawn</div>
+        <div>✔ Ridgewood</div>
+        <div>✔ Paramus</div>
+        <div>✔ Garfield</div>
+        <div>✔ Lodi</div>
+        <div>✔ Wallington</div>
+        <div>✔ East Rutherford</div>
+
+    </div>
+
+    <p class="zip-note">
+
+        Plus many surrounding communities throughout North Jersey.
+
+    </p>
+
+</section>
+<!-- ===========================
+CONTACT
+=========================== -->
 
 <section id="contact" class="contact">
 
-<h2 style="color:white;">Contact Us</h2>
+    <h2>Request Appliance Repair Service</h2>
 
-<p><strong>Phone:</strong> <a href="tel:5512235227">(551) 223-5227</a></p>
+    <p class="subtitle">
+        Call us or complete the form below and we'll contact you as soon as possible.
+    </p>
 
-<p><strong>Email:</strong> <a href="mailto:galamixxappliance@gmail.com">galamixxappliance@gmail.com</a></p>
+    <div class="contact-container">
 
-<p><strong>Hours:</strong> Open 7 Days a Week • 8:00 AM – 10:00 PM</p>
-<form action="https://api.web3forms.com/submit" method="POST">
-  <input type="hidden" name="access_key" value="054752c6-4615-493e-83da-a03f07611d5e">
- <form action="https://formsubmit.co/galamixxappliance@gmail.com" method="POST">
+        <!-- Business Information -->
 
-    <input type="text" name="Name" placeholder="Full Name"required>
+        <div class="contact-info">
 
-    <input type="tel"
-           name="Phone"
-           placeholder="Phone Number"
-           required>
+            <h3>Contact Information</h3>
 
-    <input type="email"
-           name="Email"
-           placeholder="Email Address"
-           required>
+            <div class="info-box">
+                📞 <strong>Phone</strong><br>
+                <a href="tel:5512235227">(551) 223-5227</a>
+            </div>
 
-    <textarea
-        name="Appliance Issue"
-        placeholder="Describe your appliance issue"
-        rows="6"
-        required></textarea>
+            <div class="info-box">
+                📧 <strong>Email</strong><br>
+                <a href="mailto:galamixxappliance@gmail.com">
+                    galamixxappliance@gmail.com
+                </a>
+            </div>
 
-    <button type="submit">Request Service</button>
+            <div class="info-box">
+                🕒 <strong>Business Hours</strong><br>
+                Open 7 Days a Week<br>
+                9:00 AM – 10:00 PM
+            </div>
 
-</form>
+            <div class="info-box">
+                 <strong>THANK YOU!  </strong><br>
+                For Choosing GALAMIXX
+            </div>
+
+        </div>
+
+        <!-- Contact Form -->
+
+        <div class="contact-form">
+
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden"
+                       name="access_key"
+                       value="054752c6-4615-493e-83da-a03f07611d5e">
+
+                <input
+                    type="text"
+                    name="Name"
+                    placeholder="Full Name"
+                    required>
+
+                <input
+                    type="tel"
+                    name="Phone"
+                    placeholder="Phone Number"
+                    required>
+
+                <input
+                    type="email"
+                    name="Email"
+                    placeholder="Email Address"
+                    required>
+
+                <input
+                    type="text"
+                    name="Appliance"
+                    placeholder="Appliance (Refrigerator, Washer, Dryer...)"
+                    required>
+
+                <textarea
+                    name="Issue"
+                    rows="6"
+                    placeholder="Describe the appliance problem..."
+                    required></textarea>
+
+                <button type="submit">
+                    Request Service
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
 
 </section>
 
+<!-- ===========================
+FOOTER
+=========================== -->
+
 <footer>
 
+    <img src="images/logo.png" alt="GalaMixx Logo">
 
-<p>© 2026 GalaMixx Appliance Repair  | Fast • Reliable • Professional</p>
+    <h3>GalaMixx Appliance Repair</h3>
 
-<p>(551) 223-5227 | galamixxappliance@gmail.com</p>
+    <p>
+        Fast • Reliable • Honest Appliance Repair
+    </p>
+
+    <p>
+        📞 (551) 223-5227
+    </p>
+
+    <p>
+        📧 galamixxappliance@gmail.com
+    </p>
+
+    <p class="copyright">
+
+        ©  GalaMixx Appliance Repair.
+        All Rights Reserved.
+
+    </p>
 
 </footer>
 
 </body>
-</html>
