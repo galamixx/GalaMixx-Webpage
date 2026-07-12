@@ -758,44 +758,36 @@ SERVICE AREA
 MOBILE header nav css
 =========================== */
 
+/* MOBILE HEADER */
 @media(max-width:900px){
 
-header{
+    header{
+        flex-direction:column;
+    }
 
-    flex-direction:column;
+    .logo{
+        flex-direction:column;
+    }
 
-}
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+        margin-top:15px;
+    }
 
-.logo{
+    .call-header{
+        margin-top:20px;
+        margin-left:0;
+    }
 
-    flex-direction:column;
-
-}
-}
-nav{
-
-    flex-wrap:wrap;
-
-    justify-content:center;
-
-    margin-top:15px;
-
-}
-
-.call-header{
-
-    margin-top:20px;
-
-    margin-left:0;
+    .logo h1{
+        font-size:30px;
+    }
 
 }
 
-.logo h1{
 
-    font-size:30px;
-
-}
-  }
+/* HERO BUTTONS */
 
 .hero-buttons{
     display:flex;
