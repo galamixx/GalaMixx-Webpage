@@ -17,9 +17,6 @@ content="Fast, reliable appliance repair for refrigerators, washers, dryers, dis
 <meta name="robots" content="index, follow">
 <meta name="author" content="GalaMixx Appliance Repair">
 
-<meta name="author" content="GalaMixx Appliance Repair">
-
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -34,14 +31,12 @@ content="Fast, reliable appliance repair for refrigerators, washers, dryers, dis
     "Essex County, NJ"
   ],
   "openingHours": "Mo-Su 09:00-22:00"
+  "image":"https://yourwebsite.com/images/logo.png"
 }
 </script>
 
-</head>
-
-
 <style>
-
+</head>
 *{
     margin:0;
     padding:0;
@@ -61,6 +56,11 @@ body{
 
 img{
     max-width:100%;
+}
+  .google-icon{
+    width:60px;
+    height:auto;
+    margin-bottom:15px;
 }
 /* HERO */
 
@@ -86,15 +86,12 @@ img{
 
     overflow:hidden;
 
-    background:
+   background:
+linear-gradient(rgba(0,0,0,.55),
+rgba(0,0,0,.55)),
+url("images/hero.jpg");
 
-    linear-gradient(rgba(0,0,0,.55),
-    rgba(0,0,0,.55)),
-
-   url("images/hero.jpg")
-
-    background-size:cover;
-
+background-size:cover;
     background-position:center;
 
     display:flex;
@@ -510,14 +507,6 @@ header{
     width:auto;
 }
 
-
-
-.logo h1{
-    color:white;
-    font-size:10px;
-}
-
-
 .logo span{
 
     color:#F57C00;
@@ -797,6 +786,23 @@ MOBILE header nav css
 
 }
 
+    @media(max-width:600px){
+
+nav a{
+ font-size:14px;
+}
+
+@media(max-width:600px){
+
+    .call-header{
+        width:100%;
+        text-align:center;
+        margin-top:10px;
+        margin-left:0;
+    }
+
+}
+
 /* HERO BUTTONS */
 
 .hero-buttons{
@@ -866,8 +872,7 @@ MOBILE
     }
 
 }
- 
-</style>
+ </style>
 
 </head>
 
@@ -890,7 +895,7 @@ MOBILE
 
 <a href="#contact">Contact</a>
 
-<a href="tel:5512235227" class="call-header">
+<a href="tel:+15512235227" class="call-header">
  Call (551) 223-5227
 </a>
 
@@ -937,8 +942,6 @@ HERO SECTION
 
 </section>
   
-
-    </div>
 <!-- ===========================
 SERVICES
 =========================== -->
@@ -1082,7 +1085,7 @@ GOOGLE REVIEWS
             Your feedback helps us continue providing fast, honest, and reliable appliance repair throughout North Jersey.
         </p>
 
-        <a href="//g.page/r/CZWVw-iExxM8EAE/review"
+        <a href="https://g.page/r/CZWVw-iExxM8EAE/review"
            target="_blank"
            class="review-button">
             ⭐ Leave a Google Review
@@ -1262,3 +1265,4 @@ FOOTER
 </footer>
 
 </body>
+  </html>
